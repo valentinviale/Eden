@@ -1,0 +1,132 @@
+{
+    "$id": "http://example.com/example.json",
+    "type": "array",
+    "default": [],
+    "title": "Root Schema",
+    "items": {
+        "type": "object",
+        "default": {},
+        "title": "A Schema",
+        "required": [
+            "ID",
+            "NombreFantasia",
+            "Direccion",
+            "HorarioAtencion",
+            "MediosPago",
+            "Latitud",
+            "Longitud",
+            "Region",
+            "ComoLlegar",
+            "Imagen"
+        ],
+        "properties": {
+            "ID": {
+                "type": "integer",
+                "default": 0,
+                "title": "The ID Schema",
+                "examples": [
+                    1
+                ]
+            },
+            "NombreFantasia": {
+                "type": "string",
+                "default": "",
+                "title": "The NombreFantasia Schema",
+                "examples": [
+                    "Disquerías Edén"
+                ]
+            },
+            "Direccion": {
+                "type": "string",
+                "default": "",
+                "title": "The Direccion Schema",
+                "examples": [
+                    "Obispo Trejo 15"
+                ]
+            },
+            "HorarioAtencion": {
+                "type": "string",
+                "default": "",
+                "title": "The HorarioAtencion Schema",
+                "examples": [
+                    "Lunes a Viernes de 09:30 a 17:45 y Sábados de 09:00 a 13:00 Hs"
+                ]
+            },
+            "MediosPago": {
+                "type": "string",
+                "default": "",
+                "title": "The MediosPago Schema",
+                "examples": [
+                    "Tarjeta Crédito - Efectivo"
+                ]
+            },
+            "Latitud": {
+                "type": "number",
+                "default": 0.0,
+                "title": "The Latitud Schema",
+                "examples": [
+                    
+                    31.4157138
+                ]
+            },
+            "Longitud": {
+                "type": "number",
+                "default": 0.0,
+                "title": "The Longitud Schema",
+                "examples": [
+                    64.1856459
+                ]
+            },
+            "Region": {
+                "type": "string",
+                "default": "",
+                "title": "The Region Schema",
+                "examples": [
+                    "Centro"
+                ]
+            },
+            "ComoLlegar": {
+                "type": "string",
+                "default": "",
+                "title": "The ComoLlegar Schema",
+                "examples": [
+                    ""
+                ]
+            },
+            "Imagen": {
+                "type": "string",
+                "default": "",
+                "title": "The Imagen Schema",
+                "examples": [
+                    "https://static.edenentradas.com.ar/sitio/shows/pdv_EDENCENTRAL.jpg"
+                ]
+            }
+        },
+        "examples": [{
+            "ID": 1,
+            "NombreFantasia": "Disquerías Edén",
+            "Direccion": "Obispo Trejo 15",
+            "HorarioAtencion": "Lunes a Viernes de 09:30 a 17:45 y Sábados de 09:00 a 13:00 Hs",
+            "MediosPago": "Tarjeta Crédito - Efectivo",
+            "Latitud":  [31.4157138],
+            "Longitud": [64.1856459],
+            "Region": "Centro",
+            "ComoLlegar": "",
+            "Imagen": "https://static.edenentradas.com.ar/sitio/shows/pdv_EDENCENTRAL.jpg"
+        }]
+    },
+    "examples": [
+        [{
+            "ID": 1,
+            "NombreFantasia": "Disquerías Edén",
+            "Direccion": "Obispo Trejo 15",
+            "HorarioAtencion": "Lunes a Viernes de 09:30 a 17:45 y Sábados de 09:00 a 13:00 Hs",
+            "MediosPago": "Tarjeta Crédito - Efectivo",
+            "Latitud":[31.4157138],
+            "Longitud":[64.1856459],
+            "Region": "Centro",
+            "ComoLlegar": "",
+            "Imagen": "https://static.edenentradas.com.ar/sitio/shows/pdv_EDENCENTRAL.jpg"
+        }]
+    ]
+}
