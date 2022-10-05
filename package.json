@@ -4,6 +4,7 @@
     "nodejs": "^0.0.0"
   },
   "devDependencies": {
-    "cypress": "^10.9.0"
+    "cypress": "^10.9.0",
+    "mochawesome": "^7.1.3"
   }
 }

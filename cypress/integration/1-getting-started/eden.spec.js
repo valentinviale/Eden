@@ -26,7 +26,9 @@ describe("Test de pagina Eden", () => {
         cy.wait(5);
         eden.getShowImage().eq($index).should("have.attr", "src", infoEvento.Imagen);
         eden.getShowImage().eq($index).trigger("mouseover");
-        eden.getShowDate().should("be.visible").and("contain.text" , infoEvento.Lugar , infoEvento.Fecha);
+        eden.getShowDate().should("be.visible")
+        .and("contain.text" , infoEvento.Fecha)
+        .and("contain.text", infoEvento.Lugar);
       });
     });
   });

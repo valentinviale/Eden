@@ -1,1 +1,6 @@
-{}
+{
+    
+"reporter" : "mochawesome",
+"videos" : false
+       
+}
