@@ -1,3 +1,4 @@
 node_modules
 fixtures/eventos.json
-fixtures/eden
+cypress/fixtures
+cypress/videos

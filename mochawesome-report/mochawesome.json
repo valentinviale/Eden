@@ -1,23 +1,84 @@
 {
   "stats": {
-    "suites": 0,
-    "tests": 0,
+    "suites": 1,
+    "tests": 1,
     "passes": 0,
     "pending": 0,
-    "failures": 0,
-    "start": "2022-10-05T17:27:28.054Z",
-    "end": "2022-10-05T17:27:28.074Z",
-    "duration": 20,
-    "testsRegistered": 0,
-    "passPercent": null,
-    "pendingPercent": null,
+    "failures": 1,
+    "start": "2022-10-06T00:07:54.506Z",
+    "end": "2022-10-06T00:08:42.665Z",
+    "duration": 48159,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
     "skipped": 0,
     "hasSkipped": false
   },
   "results": [
-    false
+    {
+      "uuid": "56f5397d-31b0-43a5-a2eb-061d1462053e",
+      "title": "",
+      "fullFile": "cypress/integration/1-getting-started/eden.spec.js",
+      "file": "cypress/integration/1-getting-started/eden.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "1bfeb94c-9aa5-4560-b659-d5967f54cd74",
+          "title": "Test de pagina Eden",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verificar las cards de los espectáculos",
+              "fullTitle": "Test de pagina Eden Verificar las cards de los espectáculos",
+              "timedOut": null,
+              "duration": 45094,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const eden = new _eden.default();\ncy.visit(\"https://www.edenentradas.com.ar/sitio/contenido/inicio\");\ncy.fixture(\"eden/espectaculos\").then(fixture => {\n  fixture.Eventos.forEach((infoEvento, $index) => {\n    eden.getShowCard().eq($index).scrollIntoView();\n    eden.getShowName().eq($index).should(\"have.text\", infoEvento.Nombre);\n    cy.wait(5);\n    eden.getShowImage().eq($index).should(\"have.attr\", \"src\", infoEvento.Imagen);\n    eden.getShowImage().eq($index).trigger(\"mouseover\");\n    eden.getShowDate().should(\"be.visible\").and(\"contain.text\", infoEvento.Fecha).and(\"contain.text\", infoEvento.Lugar);\n  });\n});",
+              "err": {
+                "message": "CypressError: `cy.screenshot()` timed out waiting `30000ms` to complete.",
+                "estack": "CypressError: `cy.screenshot()` timed out waiting `30000ms` to complete.\n    at https://www.edenentradas.com.ar/__cypress/runner/cypress_runner.js:165578:81\n    at tryCatcher (https://www.edenentradas.com.ar/__cypress/runner/cypress_runner.js:13022:23)\n    at https://www.edenentradas.com.ar/__cypress/runner/cypress_runner.js:8144:41\n    at tryCatcher (https://www.edenentradas.com.ar/__cypress/runner/cypress_runner.js:13022:23)\n    at Promise._settlePromiseFromHandler (https://www.edenentradas.com.ar/__cypress/runner/cypress_runner.js:10957:31)\n    at Promise._settlePromise (https://www.edenentradas.com.ar/__cypress/runner/cypress_runner.js:11014:18)\n    at Promise._settlePromise0 (https://www.edenentradas.com.ar/__cypress/runner/cypress_runner.js:11059:10)\n    at Promise._settlePromises (https://www.edenentradas.com.ar/__cypress/runner/cypress_runner.js:11135:18)\n    at _drainQueueStep (https://www.edenentradas.com.ar/__cypress/runner/cypress_runner.js:7729:12)\n    at _drainQueue (https://www.edenentradas.com.ar/__cypress/runner/cypress_runner.js:7722:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://www.edenentradas.com.ar/__cypress/runner/cypress_runner.js:7738:5)\n    at Async.drainQueues (https://www.edenentradas.com.ar/__cypress/runner/cypress_runner.js:7608:14)",
+                "diff": null
+              },
+              "uuid": "685dab88-ac8c-4285-8176-3a3e5c0df29d",
+              "parentUUID": "1bfeb94c-9aa5-4560-b659-d5967f54cd74",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "685dab88-ac8c-4285-8176-3a3e5c0df29d"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 45094,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
   ],
   "meta": {
     "mocha": {
