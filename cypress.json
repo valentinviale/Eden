@@ -5,6 +5,7 @@
     "overwrite" : false,
     "reportDir": "cypress/results"
 },
-"video": false
+"video": false,
+"screenshot" : false
        
 }
