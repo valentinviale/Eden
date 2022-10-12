@@ -17,7 +17,7 @@ describe("Test de pagina Eden", () => {
     );
   });
 
-  it.only("Verificar las cards de los espectáculos", {tags: '@regression'},() => {
+  it("Verificar las cards de los espectáculos", {tags: '@regression'},() => {
     const eden = new EdenPage();
 
     cy.visit("https://www.edenentradas.com.ar/sitio/contenido/inicio");
@@ -32,6 +32,7 @@ describe("Test de pagina Eden", () => {
         eden.getShowDate().should("be.visible")
         .and("contain.text" , infoEvento.Fecha)
         .and("contain.text", infoEvento.Lugar);
+        eden.getShowDate().should('have.css', 'background-color', 'rgba(23, 57, 100, 0.99)');
         
       });
     });
