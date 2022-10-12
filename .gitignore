@@ -2,4 +2,3 @@ node_modules
 fixtures/eventos.json
 cypress/fixtures
 cypress/videos
-integration/advanced-examples
