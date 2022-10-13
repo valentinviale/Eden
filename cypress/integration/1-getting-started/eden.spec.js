@@ -8,10 +8,10 @@ registerCypressGrep();
 
 
 describe("Test de pagina Eden", () => {
-  
+  beforeEach(() => {
+    cy.visit("https://www.edenentradas.com.ar/sitio/contenido/inicio");
   it("Llamada a servicio: /inicio", () => {
-    beforeEach(() => {
-      cy.visit("https://www.edenentradas.com.ar/sitio/contenido/inicio");
+    
       cy.callService("inicio", "espectaculos");
         });
       });
@@ -24,7 +24,7 @@ describe("Test de pagina Eden", () => {
           );
         });
 
-  it.only(
+  it(
           "Verificar las cards de los espectáculos",
           { tags: "@regression" },
           () => {

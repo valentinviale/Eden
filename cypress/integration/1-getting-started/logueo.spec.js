@@ -20,7 +20,7 @@ it(
   
       const header = new HeaderPage();
       const login = new LoginPage();
-      //const account = new account();
+      
 
       header.getLoginRegisterButon().click();
 
